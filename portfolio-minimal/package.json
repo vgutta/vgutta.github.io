@@ -85,7 +85,7 @@
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test develop http://localhost:9000 cy:open",
     "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "husky": {
     "hooks": {
