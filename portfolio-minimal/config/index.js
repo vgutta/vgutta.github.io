@@ -68,10 +68,11 @@ module.exports = {
       name: "Github",
       url: "https://github.com/vgutta/",
     },
-    // {
-    //   name: "Behance",
-    //   url: "https://www.behance.net/konstanmnster",
-    // },
+    {
+      name: "CV",
+      filename: "Resume_3-24.pdf",
+      url: "https://github.com/vgutta/",
+    },
     // {
     //   name: "Mail",
     //   url: "mailto:mail@konstantin.digital",
