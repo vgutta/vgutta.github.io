@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: "Vineeth's Personal Site",
   siteShortTitle: "VG.", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
+    "Vineeth's personal website showcasing his projects, skills, and interests.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
   siteLanguage: "en_US",
   siteIcon: "content/face_animoji.png", // Relative to gatsby-config file
