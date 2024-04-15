@@ -70,8 +70,7 @@ module.exports = {
     },
     {
       name: "CV",
-      filename: "Resume_3-24.pdf",
-      url: "https://github.com/vgutta/",
+      url: "Vineeth_Gutta_cv_2024.pdf",
     },
     // {
     //   name: "Mail",
@@ -87,7 +86,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Portfolio",
         url: "/#projects",
       },
       {

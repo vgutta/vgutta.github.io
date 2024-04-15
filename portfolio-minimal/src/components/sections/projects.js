@@ -182,20 +182,20 @@ const StyledProject = styled(motion.div)`
       }
     }
   }
-  .screenshot {
-    width: 100%;
-    max-width: 25rem;
-    height: 15rem;
-    border-radius: ${({ theme }) => theme.borderRadius};
-    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
-    transition: all 0.3s ease-out;
-    &:hover {
-      transform: translate3d(0px, -0.125rem, 0px);
-      box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
-    }
-    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      height: 18.75rem;
-    }
+`
+const StyledImg = styled(Img)`
+  width: 100%;
+  max-width: 25rem;
+  height: 15rem;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: translate3d(0px, -0.125rem, 0px);
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.32);
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    height: ${({ imgHeight }) => imgHeight};
   }
 `
 
@@ -338,9 +338,16 @@ const Projects = ({ content }) => {
                   <VisibilitySensor
                     onChange={() => setVisibleProject(frontmatter.position)}
                   >
-                    <Img
+                    {/*<Img
                       className="screenshot"
                       fluid={frontmatter.screenshot.childImageSharp.fluid}
+                    />*/}
+                    <StyledImg
+                      className="screenshot"
+                      fluid={frontmatter.screenshot.childImageSharp.fluid}
+                      imgHeight={
+                        frontmatter.position == 1 ? "30.75rem" : "19.75rem"
+                      } // set height for UNNT project
                     />
                   </VisibilitySensor>
                 </StyledProject>
