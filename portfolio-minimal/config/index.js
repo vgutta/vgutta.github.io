@@ -103,6 +103,11 @@ module.exports = {
   },
   footerLinks: [
     {
+      name: "Theme",
+      url:
+        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme",
+    },
+    {
       name: "Privacy",
       url: "/privacy",
     },
