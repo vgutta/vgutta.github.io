@@ -61,7 +61,13 @@ const Footer = () => {
         </Link>
         <div className="footer-links" data-testid="footer-links">
           {footerLinks.map(({ name, url }, key) => (
-            <StyledLink key={key} to={url} $darkMode={darkMode}>
+            <StyledLink
+              target="_blank"
+              rel="noopener noreferrer"
+              key={key}
+              to={url}
+              $darkMode={darkMode}
+            >
               {name}
             </StyledLink>
           ))}
