@@ -86,7 +86,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Portfolio",
+        name: "Projects",
         url: "/#projects",
       },
       {
@@ -97,7 +97,7 @@ module.exports = {
     button: {
       useFileName: true,
       name: "Resume",
-      fileName: "Resume_3-24.pdf", // the file has to be placed inside the static folder at the root level
+      fileName: "Resume_Vineeth.pdf", // the file has to be placed inside the static folder at the root level
       url: "", // if useFileName=false, you can set an anchor link here and use the button for navigational purposes
     },
   },
